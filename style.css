@@ -1,0 +1,51 @@
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .calculator-container {
+    padding: 15px !important;
+    width: 100% !important;
+  }
+
+  .calculator-box {
+    padding: 20px !important;
+  }
+
+  input[type="number"] {
+    font-size: 16px !important;
+    padding: 12px !important;
+  }
+
+  .btn {
+    padding: 12px 8px !important;
+    margin: 5px 0 !important;
+    min-width: 60px;
+  }
+
+  #result {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Общие улучшения */
+.calculator-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+input[type="number"] {
+  transition: all 0.3s;
+}
+
+.btn {
+  transition: transform 0.1s;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Отключение подсветки при тапе на мобильных */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
